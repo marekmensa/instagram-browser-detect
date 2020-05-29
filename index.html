@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram browser catch</title>
+  </head>
+  <body>
+    <div id="info" style="display: none;">
+      <img src="info.png" />
+    </div>
+  </body>
+</html>
+<script>
+  /* START: Functions */
+  function isWebview() {
+    var standalone = window.navigator.standalone,
+      userAgent = window.navigator.userAgent.toLowerCase(),
+      safari = /safari/.test(userAgent),
+      ios = /iphone|ipod|ipad/.test(userAgent);
+
+    if (ios) {
+      if (!standalone && safari) {
+        return false;
+        // browser
+      } else if (standalone && !safari) {
+        return false;
+        // standalone
+      } else if (!standalone && !safari) {
+        return true;
+        // uiwebview
+      }
+    } else {
+      return false;
+      // non ios
+    }
+  }
+
+  function urlParam(param) {
+    let urlParam = '';
+    if (window.location.href.indexOf(param) > -1) {
+      urlParam = this.urlVars()[param];
+    }
+    return urlParam;
+  }
+
+  function urlVars() {
+    const vars = {};
+    window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, (m, key, value) => {
+      vars[key] = value;
+    });
+    return vars;
+  }
+
+  /* END: Functions */
+
+  if (isWebview()) {
+    document.getElementById('info').style.display="block";
+  } else {
+    window.location = `https://bit.ly/${urlParam('id')}`;
+  }
+</script>
+<style>
+  body {
+    background: black;
+  }
+  div {
+    text-align: right;
+    display: none;
+  }
+</style>
