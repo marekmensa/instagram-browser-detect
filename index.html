@@ -54,7 +54,7 @@
 
   /* END: Functions */
 
-  if (!isWebview()) {
+  if (isWebview()) {
     document.getElementById('info').style.display = 'block';
   } else {
     const id = urlParam('id');
