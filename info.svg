@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="414px" height="896px" viewBox="0 0 414 896" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>iPhone SE</title>
+    <g id="iPhone-SE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#000000" x="0" y="0" width="414" height="896"></rect>
+        <text id="1.-Click-the-three-d" font-family="LucidaGrande, Lucida Grande" font-size="30" font-weight="normal" letter-spacing="0.25" fill="#FFFFFF">
+            <tspan x="50" y="259">1. Click</tspan>
+            <tspan x="160.955078" y="259" font-family="AlTarikh, Al Tarikh"> </tspan>
+            <tspan x="165.62793" y="259">the</tspan>
+            <tspan x="212.930664" y="259" font-family="AlTarikh, Al Tarikh"> </tspan>
+            <tspan x="217.603516" y="259">three</tspan>
+            <tspan x="294.395508" y="259" font-family="AlTarikh, Al Tarikh"> </tspan>
+            <tspan x="299.068359" y="259">dots</tspan>
+        </text>
+        <text id="2.-&quot;Open-in-Safari&quot;" font-family="LucidaGrande, Lucida Grande" font-size="30" font-weight="normal" letter-spacing="0.25" fill="#FFFFFF">
+            <tspan x="50" y="327">2. "Open in Safari"</tspan>
+        </text>
+        <path id="Line" d="M385,51 L386.076923,66.6153846 L380.537,64.307 L320.923077,207.384615 L320.538462,208.307692 L318.692308,207.538462 L319.076923,206.615385 L378.692,63.538 L373.153846,61.2307692 L385,51 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>
